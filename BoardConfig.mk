@@ -30,5 +30,8 @@ AUDIO_FEATURE_ELLIPTIC_ULTRASOUND_SUPPORT := true
 # Kernel
 TARGET_KERNEL_CONFIG += vendor/xiaomi/lithium.config
 
+# Properties
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
+
 # inherit from the proprietary version
 -include vendor/xiaomi/lithium/BoardConfigVendor.mk
