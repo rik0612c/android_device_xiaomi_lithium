@@ -1,5 +1,5 @@
 # Bluetooth
-bluetooth.device.default_name=Xiaomi MI MIX
+bluetooth.device.default_name=Xiaomi Mi MIX
 
 # USB
-vendor.usb.product_string=Xiaomi MI MIX
+vendor.usb.product_string=Xiaomi Mi MIX
