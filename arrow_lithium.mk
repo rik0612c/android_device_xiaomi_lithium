@@ -17,11 +17,12 @@
 # Inherit from lithium device
 $(call inherit-product, device/xiaomi/lithium/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common arrow stuff.
+$(call inherit-product, vendor/arrow/config/common.mk)
+DEVICE_MAINTAINER := matsuhana3
 
 # Device identifier. This must come after all inclusions
-PRODUCT_NAME := lineage_lithium
+PRODUCT_NAME := arrow_lithium
 PRODUCT_DEVICE := lithium
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := MI MIX
