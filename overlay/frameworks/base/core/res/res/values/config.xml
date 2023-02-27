@@ -238,4 +238,28 @@
     <!-- Whether a software navigation bar should be shown. NOTE: in the future this may be
          autodetected from the Configuration. -->
     <bool name="config_showNavigationBar">true</bool>
+    
+    <!-- Display mode remapping table.
+         If the mode names returned by the backend do not match
+         the predefined and translated strings in the Settings
+         app, they can be remapped here. The format is
+         "oldname:newname", one per entry. -->
+    <string-array name="config_displayModeMappings" translatable="false">
+        <item>default:standard</item>
+        <item>warm:reading</item>
+        <item>cold:dynamic</item>
+        <item>sRGB:srgb</item>
+    </string-array>
+
+    <!-- Should we filter any display modes which are unampped? -->
+    <bool name="config_filterDisplayModes">true</bool>
+
+    <!-- Default value for proximity check on screen wake
+     NOTE ! - Enable for devices that have a fast response proximity sensor (ideally < 300ms)-->
+    <bool name="config_proximityCheckOnWake">false</bool>
+
+    <!-- Whether to cleanup fingerprints upon connection to the daemon and when
+         user switches -->
+    <bool name="config_cleanupUnusedFingerprints">false</bool>
+    
 </resources>
