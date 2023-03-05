@@ -20,6 +20,9 @@ $(call inherit-product, vendor/xiaomi/lithium/lithium-vendor.mk)
 # Vendor properties
 -include $(LOCAL_PATH)/vendor_prop.mk
 
+# Inherit from private key
+$(call inherit-product-if-exists, vendor/extra/product.mk)
+
 # Local overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
@@ -67,3 +70,13 @@ PRODUCT_PACKAGES += \
 
 # Inherit from msm8996-common
 $(call inherit-product, device/xiaomi/msm8996-common/msm8996.mk)
+
+# EvolutuionX RRO Overlays
+PRODUCT_PACKAGES += \
+    SettingsResLithium \
+    FrameworksResLithium \
+    TelephonyResCommon
+
+#Remove some packages
+PRODUCT_PACKAGES += \
+    RemovePackages
