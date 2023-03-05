@@ -18,7 +18,7 @@
 -->
 <device name="Android">
     <!-- All values are in mA except as noted -->
-    <item name="battery.capacity">3500</item>
+    <item name="battery.capacity">4400</item>
 
     <!-- Additional power used when screen is turned on at minimum brightness -->
     <item name="screen.on.display0">98</item>
